@@ -5,7 +5,6 @@ using System.Xml.Serialization;
 
 namespace TrxParser.Utils
 {
-
     /// <summary>
     /// Deserializes trx files
     /// </summary>

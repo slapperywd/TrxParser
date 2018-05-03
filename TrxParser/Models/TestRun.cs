@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 namespace TrxParser.Models
 {
@@ -11,12 +6,24 @@ namespace TrxParser.Models
     public class TestRun
     {
         [XmlAttribute("id")]
-        public string RunId { get; set; }
+        public string Id { get; set; }
 
         [XmlAttribute("runUser")]
-        public string RunUser { get; set; }
+        public string User { get; set; }
+
+        [XmlAttribute("name")]
+        public string Name { get; set; }
 
         [XmlElement("Times")]
         public Times Times { get; set; }
+
+        [XmlElement("Results")]
+        public Results Results { get; set; }
+
+        [XmlElement("ResultSummary")]
+        public ResultSummary ResultSummary { get; set; }
+
+        [XmlElement("TestDefinitions")]
+        public TestDefinitions TestDefinitions { get; set; }
     }
 }

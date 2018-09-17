@@ -28,6 +28,12 @@ namespace TrxParser.Models
         [XmlAttribute("endTime")]
         public string EndTime { get; set; }
 
+        [XmlAttribute("testType")]
+        public string TestTypeId { get; set; }
+
+        [XmlAttribute("relativeResultsDirectory")]
+        public string RelativeResultsDirectoryId { get; set; }
+
         [XmlAttribute("outcome")]
         public string Outcome { get; set; }
 

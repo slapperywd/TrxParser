@@ -4,6 +4,9 @@ namespace TrxParser.Models
 {
     public class TestMethod
     {
+        [XmlAttribute("adapterTypeName")]
+        public string AdapterTypeName { get; set; }
+
         [XmlAttribute("className")]
         public string ClassName { get; set; }
 

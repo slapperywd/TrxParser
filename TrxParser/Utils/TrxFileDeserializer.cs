@@ -15,7 +15,7 @@ namespace TrxParser.Utils
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="fileName"></param>
-        /// <returns></returns>
+        /// <returns>T</returns>
         public static T Deserialize<T>(string fileName) where T : class
         {
             RemoveXmlnsAndRewriteFile(fileName);
